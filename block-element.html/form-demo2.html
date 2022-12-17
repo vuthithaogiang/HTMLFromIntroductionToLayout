@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo 2</title>
+</head>
+<style>
+    legend{
+        color:brown;
+        font-family:'Courier New', Courier, monospace;
+        font-size: 120%;
+    }
+    label{
+        color:darkslategrey;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+    p{
+        color:darkslategrey;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size:medium;
+        
+    }
+    body{
+        background-image: url(https://i.pinimg.com/564x/cc/88/17/cc881729808e3d5903e97be9eae39194.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+
+    }
+</style>
+<body>
+    <form action="ex14_layout.html" method="get">
+        <fieldset >
+            <legend > <b> Your details:  </b></legend>
+            <label > name <input style="background-color: beige;"
+                 type="text" maxlength="30" required 
+                name="name" id="name" size ="50"> </label>
+            <br>
+            <br>
+            <label > email <input style="background-color: beige;"
+                 type="email" maxlength="40" name="email", id="email" size = "50"></label> 
+        </fieldset>
+        <br>
+
+        <fieldset  >
+            <legend > <b> Your review: </b> </legend>
+
+            <p>
+            <label for="hear-about"> How did you hear about us? </label>
+            <select name="referrer" id="hear-about">
+                <option value="google">Google </option>
+                <option value="friend">Friend </option>
+                <option  value="adv">Adv </option>
+                <option value="other">Other </option>
+            </select>
+            </p>
+            <p>
+
+              <b>  Would you like visit again? </b> <br>
+                <label> <input type="radio" name="rating" value ="yes">Yes</label>
+                <label> <input type="radio" name="rating" value="no"> No</label>
+                <label> <input type="radio" name="rating" value="maybe">May be</label>
+            </p>
+
+            <p>
+                <label for="comments">Comments: </label>
+                <br>
+                <textarea style="background-color:beige ;" 
+                name="comments" id="" cols="40" rows="5"></textarea>
+            </p>
+
+            <p>
+                <label> <input type="checkbox" name="checkbox" checked>
+                Sign me up for email </label> 
+                <br>
+                <input type ="submit" value="Submit review">
+            </p>
+
+
+
+        </fieldset>
+
+    </form>
+
+    
+    
+</body>
+</html>
